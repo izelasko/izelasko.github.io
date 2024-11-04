@@ -8,10 +8,17 @@
         
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Princess+Sofia&family=Reenie+Beanie&display=swap');
 
-        *{ 
-        background-color: #4a416b;
-        user-select: none;
+        body { 
+            background-color: #4a416b;
+            user-select: none;
         }
+
+
+        
+        .container {
+            width: 798px;
+        }
+
 
         img {
          height: 400px; 
@@ -22,18 +29,20 @@
         
 
         .content {
-            width: 798px;
+            width: inherit;
             height: 738px;
             background-color: #9a8ec5;
             border-radius: 40px;
             border:#966589 solid 10px;
             color: #000000;
+        
 
         }
 
-        .content > nav {
-            background-color: #9a8ec5;
+        .container > nav {
+            background-color:transparent;
             color:#000000; 
+            text-decoration: none;
         }
 
         a button {
@@ -74,7 +83,7 @@
         
         }
 
-        a:visited button {
+        a:hover button {
         
             color:#ffffff;
             font-family: "Reenie Beanie";
@@ -93,7 +102,7 @@
             font-style:italic;
             font-weight: 800;
             line-height: normal;
-            text-align: center;
+            text-align: left;
         }
 
         #sectionHeadings{
@@ -101,10 +110,27 @@
             background-color:#9a8ec5; 
             color: #ffffff;
             font-family: "Reenie Beanie";
-            font-size: 48px;
+            font-size: 52px;
             font-style: italic;
             font-weight: 800;
             line-height: normal;
+
+        }
+
+        #about {
+            font-family:'Courier New', Courier, monospace;
+            font-size:28px;
+            color:#4a416b;
+            font-weight:600;
+            text-align: left;
+        }
+
+        #about::first-letter{
+            font-family: "Courier New", serif;
+            font-size: 72px;
+            font-weight: 800;
+            font-style: oblique;
+            text-transform:capitalize;
 
         }
 
@@ -134,7 +160,9 @@
             <header id="portfolio">Bella's Portfolio</header>
 
             <section id="about">
+                <p id="sectionHeadings">about me</p>
 
+                Hello! My name is Bella, and I am a junior studying Media Arts and Sciences with a concentration in Games and Interactive Media. I aim to be a vide game developer in my future. I love all things creative, but namely painting and live music! 
             </section>
 
             <section id="why">
