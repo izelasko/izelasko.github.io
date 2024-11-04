@@ -5,8 +5,12 @@
     <title>Bella's Homepage</title>
 
     <style>
-         *{ 
+        
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Princess+Sofia&family=Reenie+Beanie&display=swap');
+
+        *{ 
         background-color: #4a416b;
+        user-select: none;
         }
 
         img {
@@ -15,6 +19,7 @@
          object-fit: cover;
          border-radius: 50%;
         }
+        
 
         .content {
             width: 798px;
@@ -31,9 +36,76 @@
             color:#000000; 
         }
 
-        nav > button {
+        a button {
             background-color: #966589;
+            width: 183px;
+            height: 87px;
+            border-radius: 25px;
+            text-align: center;
+            border-color: #000000;
+            border-width: 0px;
+            border-style: none;
+            
+        }
+
+        a button {
+            background-color:#966589;
             color: #ffffff;
+            font-family: "Reenie Beanie";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: lowercase;
+            text-decoration: none;
+
+        }
+
+        a:hover button {
+            background-color: #9a8ec5;
+            color: #ffffff;
+            font-family: "Reenie Beanie";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 800;
+            text-transform: lowercase;
+            text-decoration: none;
+            letter-spacing: 3px;
+            border:#966589 solid 6px;
+        
+        }
+
+        a:visited button {
+        
+            color:#ffffff;
+            font-family: "Reenie Beanie";
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 400;
+            text-decoration: none;
+
+        }
+
+        #portfolio{
+            background-color: inherit; 
+            color: #ffffff;
+            font-family: "Reenie Beanie";
+            font-size: 64px;
+            font-style:italic;
+            font-weight: 800;
+            line-height: normal;
+            text-align: center;
+        }
+
+        #sectionHeadings{
+
+            background-color:#9a8ec5; 
+            color: #ffffff;
+            font-family: "Reenie Beanie";
+            font-size: 48px;
+            font-style: italic;
+            font-weight: 800;
+            line-height: normal;
+
         }
 
 
@@ -48,20 +120,35 @@
     <section class="container" id="pfp-picture" alt="A picture of a cartoon person who looks like the author of this site.">
         <img src= "./pfp.png">
         <p></p><p></p>
+        <nav id="navigation">
+            <p></p>
+            <a href="#about"><button>About</button></a>
+            <a href="#why"><button>Why</button></a>
+            <a href="#contact"><button>Contact</button></a>
+               
+
+        </nav>
 
         <section class="content">
-            <p></p>
 
-            <nav>
-             <button>About</button>
-             <button>Why</button>
-             <button>Contact</button>
-                
+            <header id="portfolio">Bella's Portfolio</header>
 
-            </nav>
+            <section id="about">
+
+            </section>
+
+            <section id="why">
+
+            </section>
+
+
+            <section id="contact">
+                    
+            </section>
 
 
         </section>
+            
 
     </section>
 
