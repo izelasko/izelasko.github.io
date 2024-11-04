@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bella's Homepage</title>
+
+    <style>
+         *{ 
+        background-color: #4a416b;
+        }
+
+        img {
+         height: 400px; 
+         width: 400px;
+         object-fit: cover;
+         border-radius: 50%;
+        }
+
+        .content {
+            width: 798px;
+            height: 738px;
+            background-color: #9a8ec5;
+            border-radius: 40px;
+            border:#966589 solid 10px;
+            color: #000000;
+
+        }
+
+        .content > nav {
+            background-color: #9a8ec5;
+            color:#000000; 
+        }
+
+        nav > button {
+            background-color: #966589;
+            color: #ffffff;
+        }
+
+
+    </style>
+
+    
+    
+</head>
+
+<body>
+
+    <section class="container" id="pfp-picture" alt="A picture of a cartoon person who looks like the author of this site.">
+        <img src= "./pfp.png">
+        <p></p><p></p>
+
+        <section class="content">
+            <p></p>
+
+            <nav>
+             <button>About</button>
+             <button>Why</button>
+             <button>Contact</button>
+                
+
+            </nav>
+
+
+        </section>
+
+    </section>
+
+
+</body>
+
+
+
+
+</html>
