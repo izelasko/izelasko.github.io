@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+    <style>
+        .video{
+            position:absolute;
+            top:0;
+            left: 0;
+            height:500px;
+            width: 500px;
+            background-color: aliceblue;
+            z-index: -2;
+
+        }
+
+        #space-video{
+            position:absolute;
+            top:0;
+            left: 0;
+            height:500px;
+            width: 500px;
+            object-fit: cover;
+            z-index: -1;
+
+
+        }
+
+        #overlay{
+            background-color: rgb(101, 66, 255);
+            opacity: .6;
+            mix-blend-mode: color;
+            position:absolute;
+            top:0;
+            left: 0;
+            height:500px;
+            width: 500px;
+            z-index: 0;
+        }
+
+        #content{
+            margin: 0;
+            position: relative;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+            color: aliceblue;
+            font-weight: 1000;
+            font-size: 24px;
+            text-align: center;
+
+        }
+
+        .transitions{
+            position: absolute;
+            top: 0;
+            left: 510px;
+            width: 550px;
+            height: 550px;
+            background-color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        } 
+
+        button{
+            background-color: aqua;
+            border-style: none;
+            padding: 10px;
+            border-radius: 5px;
+            color:white;
+            transition:all ;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            
+        
+        }
+
+        button:hover{
+            background-color: blueviolet;
+            padding:40px;
+            border-style: dotted;
+            border-color: aqua;
+            
+
+        }
+
+        .animations{
+            position:absolute;
+            top: 550px;
+            left:0px;
+            width: 550px;
+            height: 550px;
+            background-color: aqua;
+            animation-name: sample;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            z-index: 0;
+
+        }
+
+        .animations-layer2{
+            position:absolute;
+            top: 550px;
+            left:0px;
+            width: 550px;
+            height: 550px;
+            background-color: rgb(162, 48, 255);
+            animation-name: sample2;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            z-index: 0;
+
+        }
+
+        @keyframes sample{
+           0% {transform: rotate(0deg);}
+           100% {transform: rotate(360deg);}
+           
+        }
+
+        @keyframes sample2{
+           0% {transform: rotate(90deg);}
+           100% {transform: rotate(360deg);}
+           
+        }
+
+
+    </style>
+
+
+<body>
+
+    <!-- video from Video by Pixabay: https://www.pexels.com/video/cgi-animation-of-space-854228/ -->
+    <div class="video">
+        
+        <video id="space-video" autoplay="true" loop="true" muted="true">
+            <source src="854228-hd_1920_1080_30fps.mp4" type="video/mp4">
+        </video>
+
+        <div id="overlay"></div>
+            <div id="content">
+                SPACE VIDEO MEOW :3
+            </div>
+
+    </div>
+
+    <div class="transitions">
+        Transitions Practice!
+        <p></p>
+
+        <button>Hover over me!</button>
+        
+    </div>
+
+    <div class="animations">
+
+    </div>
+
+    <div class="animations-layer2"></div>
+
+
+</body>
