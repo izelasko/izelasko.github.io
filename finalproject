@@ -1,1 +1,59 @@
-/*final project code*/
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="finalstyle.css">
+</head>
+
+
+<body>
+
+<div class="header">
+
+
+</div>
+
+<div class="name">
+isabella zelasko
+
+</div>
+
+<div class="about">
+    <h1>about me!</h1>
+    <p>Hello! My name is Isabella (Bella for short). I am 20 years old, and a third-year Media Arts and Sciences major. I have a passion for all things art-related, but mainly I love to paint. I have recently been developing my coding skills in order to pursue a career in game design. </p> 
+</div>
+
+<div class="image">
+    <img src="AboutPageIMG.png" alt="picture of the artist">
+</div>
+
+<button class="button button1" onclick="location.href='physicalworks.html'">physical works</button>
+<button class="button button2" onclick="alert('Digital works clicked')">digital works</button>
+<button class="button button3" onclick="alert('Email clicked')">email</button>
+<button class="button button4" onclick="alert('Linktree clicked')">linktree</button>
+
+
+
+<div class="main">
+
+
+</div>
+
+
+<div class="contacttitle">
+    contact!
+
+</div>
+
+<div class="contact">
+
+
+</div>
+
+
+</body>
+
+
+
+
+</html>
